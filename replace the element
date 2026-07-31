@@ -1,0 +1,13 @@
+import java.util.*;
+public class replacearrlist {
+    public static void main(String[] args){
+        ArrayList<String>list=new ArrayList<>();
+       // Add "Java", "Python", "C", "C++"
+        list.add("Java");
+        list.add("Python");
+         list.add("C");
+          list.add("C++");
+          list.set(1,"HTML");
+          System.out.print(list);
+    }
+}
