@@ -1,0 +1,12 @@
+import java.util.*;
+public class Arraylist{
+    public static void main(String[] args){
+        ArrayList<String>list=new ArrayList<>();
+        list.add("apple");
+        list.add("banana");
+        list.add("strawberry");
+        System.out.println(list.get(0));
+        System.out.println(list.get(2));
+        
+    }
+}
