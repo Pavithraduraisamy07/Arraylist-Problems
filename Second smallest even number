@@ -1,0 +1,21 @@
+import java.util.*;
+public class evenarrlist {
+    public static void main(String[] args){
+        Integer arr[]={12,45,18,27,50,33,60,21,70};
+        ArrayList<Integer>list=new ArrayList<>(Arrays.asList(arr));
+        int min=Integer.MAX_VALUE;
+        int secmin=Integer.MAX_VALUE;
+        for(int i=0;i<list.size();i++){
+            if(list.get(i)%2==0){
+                if(list.get(i)<min){
+                    secmin=min;
+                    min=list.get(i);
+                }
+               else if(list.get(i)<secmin){
+                    secmin=list.get(i);
+                }
+            }
+        }
+        System.out.print(secmin);
+    }
+}
